@@ -1,10 +1,15 @@
-const YourName = window.prompt("Вкажіть своє імʼя", "Іванка");
-const YourMidname = window.prompt("Вкажіть своє по-батькові", "Іванівна");
-const YourLastname = window.prompt("Вкажіть своє прізвище", "Іванченко")
+let NumberA = window.prompt("Введіть перше число", "2");
+let NumberB = window.prompt("Введіть друге число", "2");
+const a = Number(NumberA);
+const b = Number(NumberB);
+const add = a+b;
+const sub = a-b;
+const multipl = a*b;
+const divi = a/b;
 
-alert ('Вітаю тебе, ' + YourLastname + " " + YourName + " " + YourMidname + "!")
-
-let YourNumber = window.prompt("Вкажи пʼятизначне число", "12345");
-StringYourNumber = String(YourNumber);
-
-alert(StringYourNumber.split("")[0] + " " + StringYourNumber.split("")[1]  + " "  + StringYourNumber.split("")[2] + " "  + StringYourNumber.split("")[3] + " " + StringYourNumber.split("")[4])
+alert ('Користувач ввів ' + a + " і " + b + ": " 
++ a + "+" + b + "=" + add + "; "
++ a + "-" + b + "=" + sub + "; "
++ a + "*" + b + "=" + multipl + "; "
++ a + "/" + b + "=" + divi + "."
+)
