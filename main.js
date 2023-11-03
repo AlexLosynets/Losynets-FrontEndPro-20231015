@@ -1,8 +1,15 @@
-const array = [1, 2, 3, 4, 5, 6, 7]; 
+const array = [];
+const arrayLength = prompt('Введіть кількість елементів:');
 
-function removeElement(array, value) {
-  array = array.filter((number) => number !== value);
-  console.log(array)
+for (let i = 0; i < arrayLength; i++) {
+  const item = prompt(`Введіть елемент No.${i + 1}:`);
+  array.push(item);
 }
 
-removeElement(array, 5)
+console.log('Ви ввели: ' + array.join(', '));
+
+array.sort();
+console.log('Елементи відсотровані за порядком: ' + array.join(', '));
+
+array.splice(1, 4);
+console.log('Без елементів з 2 по 4: ' + array.join(', '));
